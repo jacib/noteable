@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 13px;
+	color: #666666;
+}
+a, a:link, a:visited {
+	color: #2276BB;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+button, input[type^=submit] {
+	background: #dedede;
+	border: 1px solid #999;
+	padding: 5px 8px;
+}
+.wrapper {
+	width: 820px;
+	clear: both;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+	margin: 0;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.spacer-5 {
+	margin-top: 5px;
+}
+.spacer-10 {
+	margin-top: 10px;
+}
+.spacer-20 {
+	margin-top: 20px;
+}
+.dotted-line {
+	border: 1px dotted #ccc;
+}
+.inline {
+	display: inline;
+}
+.form-wrapper {
+	float: left;
+	width: 450px;
+	_padding: 10px;
+	_background: #f3f3f3;
+	_background: url(/images/content-bg.png) repeat-x;
+}
+.form-help {
+	float: right;
+	padding: 8px;
+	background: #C1FFC1;
+	width: 300px;
+}
+.tabular_form {
+	_margin: 3px auto 7px;
+}
+.tabular_form .buttons {
+	padding: 10px 0 0;
+	text-align: center;
+}
+.tabular_form .divider {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #FFF;
+	height: 0;
+}
+.tabular_form  tr.tallrow {
+	vertical-align: top;
+}
+.tabular_form td {
+	border: medium none;
+	margin: 0;
+	padding: 5px 1px 5px;
+}
+.tabular_form td.label {
+	font-weight: bold;
+	padding-right: 10px;
+}
+.tabular_form textarea {
+	margin-left: 0;
+	width: 300px;
+}
+.tabular_form small {
+	color:#999999;
+}
+.tabular_form input[type^="text"], .tabular_form input[type^="password"] {
+	margin-left: 0;
+	width: 300px;
+	/* Needs more formatting */
+}
+input[type^="text"], input[type^="password"] {
+	border: 1px solid #BDC7D8;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	padding: 3px;
+}
+.fieldWithErrors input {
+	border: 2px solid red;
+}
+#errorExplanation {	
+  border: 2px solid #ccc;
+  padding: 7px 20px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color:	 #f0f0f0;
+}
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  _padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  _margin: -7px;
+  color: #999;
+}
+#errorExplanation p {
+  _color: #333;
+  margin-bottom: 0;
+	font-weight: bold;
+  padding: 5px 0;
+}
+#errorExplanation ul li {
+	list-style: disc inside;
+}
+
+#header {
+	vertical-align: bottom;
+	padding: 10px 0;
+	border-bottom: 1px dotted #ccc;
+}
+#top-logo {
+	float: left;
+}
+#top-menu {
+	float: right;
+	text-align: right;
+}
+#top-menu ul li {
+	display: inline;
+	margin-left: 10px;
+}
+#top-menu #search {
+	background: #dedede;
+	border: 1px solid #CCC;
+	padding: 3px; margin-bottom: 5px;
+}
+#top-menu #search input[type^=text] {
+	width: 210px;
+	color: #cccccc;
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+#top-menu #search input[type^=submit] {
+	color: #666;
+	line-height: 16px;
+	background: url(/images/search-btn-bg.png) repeat-x;
+	border: 1px solid #CCC;
+	padding: 2px 9px;
+}
+#body {
+	margin: 10px 0;
+}	
+#body h2 {
+	margin-bottom: 10px;
+}
+#notice {
+	padding: 8px;
+	margin-bottom: 5px;
+	background-color: #FFFF88;
+}

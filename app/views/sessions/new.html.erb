@@ -1,0 +1,19 @@
+<h2>Log In</h2>
+
+<% @form.password = nil %>
+<div class="form-wrapper corner-6">
+<% tabular_form_for :form, @form, :url => session_path do |f| %>
+	<%= f.text_field :login, :required => true %>
+	<%= f.password_field :password, :required => true %>
+	<%= f.check_box :remember_me%>
+	<%= f.submit 'Log in' %>
+<% end %>
+</div>
+
+<div class="form-help corner-6">
+	Please log in to upload videos and use all the other awesome features we offer.
+	<br/><br/>
+	If you don't already have an user, please create one <a style="font-size:15px;font-weight:bold">here.</a>
+	<br/><br/>
+	<small>Please contact support on email support@blowout.dk if you have trouble logging in or encounter any other issues.</small>
+</div>

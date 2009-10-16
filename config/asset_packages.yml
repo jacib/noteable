@@ -1,0 +1,13 @@
+--- 
+javascripts: 
+- base: 
+  - prototype
+  - jquery
+  - jquery.corner
+  - effects
+  - dragdrop
+  - controls
+  - application
+stylesheets: 
+- base: []
+

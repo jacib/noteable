@@ -1,0 +1,20 @@
+<h2>Sign up as a new user</h2>
+<% @user.password = @user.password_confirmation = nil %>
+
+<div class="form-wrapper corner-6">
+	<div class="error-messages">
+		<%= error_messages_for :user, :class => "corner-6", :header_message => nil %>
+	</div>
+
+<% tabular_form_for @user, :url => users_path do |f| %>
+	<%= f.text_field :login, :required => true %></p>
+	<%= f.text_field :email, :required => true %></p>
+	<%= f.password_field :password, :required => true %></p>
+	<%= f.password_field :password_confirmation, :required => true %></p>
+	<%= f.submit 'Sign up' %>
+<% end %>
+</div>
+
+<div class="form-help corner-6">
+		
+</div>

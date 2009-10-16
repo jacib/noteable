@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<%= javascript_include_merged "jquery", "jquery.corner" %>
+	<%= stylesheet_link_merged "style" %>
+	<script type="text/javascript">
+		$('.corner-3').corner('3px');
+		$('.corner-6').corner('6px');
+		$('input[type^=submit]').corner('4px');
+	</script>
+	<title>Noteable | <%= page_title %></title>
+	<%= yield :head %>
+</head>
+
+<body>
+	<div id="header">
+		<div class="wrapper">
+			<div id="top-logo">
+				<img src="/images/noteable-logo.png" height="50px"/>
+			</div>
+			<div id="top-menu">
+				<div id="search" class="corner-3">	
+					<input type="text" value="search noteable"/> 
+					<input type="submit" value="Go" class="corner-3"/>
+				</div>
+				<%= render :partial => "/layouts/menu" %>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="body">	
+		<div class="wrapper">
+			<div id="body-inner">
+				<% if flash[:notice] %>
+					<div id="notice" class="corner-5">
+						<%= flash[:notice] %>
+					</div>
+				<% end %>
+			
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
